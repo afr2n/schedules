@@ -1,0 +1,21 @@
+# Dependency directories
+node_modules/
+
+# Environment files
+.env
+
+# Compiled output
+/dist/
+/build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.bak
+*.log
+.DS_Store
