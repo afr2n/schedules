@@ -115,7 +115,7 @@ npx cypress run
 
 ### 1. Standardize Card Height and Implement Text Truncation
 
-**Description:** Currently, the card height varies depending on the length of the content. To provide a consistent and visually appealing layout, we should standardize the height of all cards. Additionally, implement text truncation for long content with a tooltip to display the full text upon hover.
+**Description:** Currently, the card height varies depending on the length of the content. To provide a consistent and visually appealing layout, we should standardize the height of all cards. Additionally, implement text truncation for long content with a tooltip to display the full text upon hover. And to add a functionality to the menu icon on header
 
 **Steps to Implement:**
 - Set a fixed height for all cards, ensuring consistency in the UI.
