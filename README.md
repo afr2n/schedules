@@ -1,6 +1,6 @@
 # Blue Prism Cloud Web Application - Schedules Section
 
-Welcome to the Blue Prism Cloud Schedules Section README. This document provides an overview of the Schedules Section of our new web application, including its functionality, features, and implementation details.
+Welcome to the Blue Prism Cloud Schedules Section README. This document provides an overview of the Schedules Section of the new web application, including its functionality, features, and implementation details.
 
 ## Overview
 
@@ -29,42 +29,89 @@ The Schedules Section is built using the latest best practices and technologies.
 - Axios: Promise-based HTTP client for making API requests.
 - React-Select: Customizable select component for handling user selections.
 - Tailwind CSS: Utility-first CSS framework for styling components.
-- Jest and React Testing Library: Testing frameworks for unit and integration testing.
+- Cypress: End to end testing for the app.
 - Documentation: Comprehensive documentation to guide development and usage.
 
-### Folder Structure
 
-- `src/components`: Contains React components for rendering UI elements.
-- `src/types`: Defines TypeScript types and interfaces for data structures.
-- `src/utils`: Includes utility functions for common tasks.
-- `src/api`: Provides modules for interacting with the RESTful API.
-- `src/styles`: Houses global styles and utility classes for styling components.
-
-### Testing
-
-- Unit tests: Implemented using Jest for testing individual components and utility functions.
-- Integration tests: Utilize React Testing Library to test component interactions and behavior.
-
-### Documentation
-
-- README: Provides an overview of the Schedules Section, including functionality, features, and implementation details.
-- Code Comments: Inline comments within the codebase to explain complex logic and functionalities.
-- API Documentation: Describes the endpoints, request methods, and response structures of the RESTful API.
-
-## Getting Started
-
-To run the Schedules Section of the Blue Prism Cloud web application locally, follow these steps:
-
-1. Clone the repository.
-2. Install dependencies using `npm install`.
-3. Start the development server using `npm start`.
-4. Access the application in your browser at `http://localhost:3000`.
 
 ## Thought Process During Breakdown Phase
 
-During the breakdown phase, the team focused on understanding the requirements and breaking down the tasks into manageable components. We discussed the user stories provided and identified the key features required for the Schedules Section. We also brainstormed potential challenges and solutions, ensuring a smooth development process. By collaborating effectively and leveraging our expertise, we created a comprehensive plan to deliver a high-quality solution that meets the needs of our users.
+During the breakdown phase, I focused on understanding the requirements and breaking down the tasks into manageable components. Thought of the user stories provided and identified the key features required for the Schedules Section. Noted potential challenges and solutions, ensuring a smooth development process. Drafted a plan to deliver a high-quality solution that meets the needs of the users.
 
-## Improvements
+## Installation Frontend
+
+To run the Schedule Filter locally, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/afr2n/schedules.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd schedules
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+## Usage Frontend
+
+Once the installation is complete, you can start the development server to use the Schedules Filter:
+
+```bash
+npm run dev
+```
+
+Access the application in your web browser at [http://localhost:5173/](http://localhost:5173/).
+
+## Installation Backend 
+To host the Backend locally, please run the following command:
+1. Clone the repository:
+```bash
+git clone https://github.com/afr2n/json-server.git
+```
+2. Navigate to the project directory:
+
+```bash
+cd json-server
+```
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+## Usage Backend
+Once the installation is complete, you can start the development server to use the Schedules Filter:
+
+```bash
+npm run dev
+```
+
+The following endpoints are available on the Backend: 
+1. http://localhost:3000/schedules
+2. http://localhost:3000/schedules/:id
+3. http://localhost:3000/scheduleLogs
+
+
+
+## Testing
+
+The Schedule Filter includes automated tests to ensure its functionality. To run the tests, use the following command:
+- End to end test: Implemented using Cypress for testing app functionality as a whole.
+
+```bash
+npx cypress run
+```
+
+
+## Improvements I would like to make if I had more time
 
 ### 1. Standardize Card Height and Implement Text Truncation
 
@@ -100,60 +147,14 @@ During the breakdown phase, the team focused on understanding the requirements a
 **Expected Outcome:** Users will have more flexibility in filtering schedule log data, allowing them to narrow down their search based on specific date ranges and criteria. Dynamic filter options will adapt to the available data, providing a more intuitive filtering experience.
 
 
+
+
+### Documentation
+
+- README: Provides an overview of the Schedules Section, including functionality, features, and implementation details.
+- Code Comments: Inline comments within the codebase to explain complex logic and functionalities.
+- API Documentation: Describes the endpoints, request methods, and response structures of the RESTful API.
+
 ## Conclusion
 
 The Schedules Section of the Blue Prism Cloud web application provides users with a seamless experience for managing schedules and viewing corresponding log entries. By adhering to best practices, utilizing modern technologies, and focusing on user experience, we aim to deliver a high-quality solution that meets the needs of our users.
-
-## Installation
-
-To run the Product Filter locally, follow these steps:
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/afr2n/product-filter.git
-```
-
-2. Navigate to the project directory:
-
-```bash
-cd product-filter
-```
-
-3. Install dependencies:
-
-```bash
-npm install
-```
-
-## Usage
-
-Once the installation is complete, you can start the development server to use the Product Filter:
-
-```bash
-npm run dev
-```
-
-Access the application in your web browser at [http://localhost:5173/](http://localhost:5173/).
-
-## Testing
-
-The Product Filter includes automated tests to ensure its functionality. To run the tests, use the following command:
-
-```bash
-npx cypress run
-```
-
-
-improvements
-1. make the card height same for all and truncate rest, show tooltip for rest of data
-2. use yup schema to validate data before post or patch of form (only path for boolean right now so did not add it)
-3. make the filters for the schedule log more detailed to fetch between the dates and make it dynamic instead of hardcoded options for select
-
-
-fix custom color, check if custom option on select is required,write test, fix the readme file, 
-
-write down how long it took to complete the task
-check for dependencies
-Readme has no description of the thought process during breakdown phase or any description of project structure. I would’ve liked to see more dedication when writing the readme
-After following the instructions to install the dependencies, when running the tests there’s a missing dependency (cypress)
